@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "83361042-866b-4197-bf1c-4bb545413b4f",
+		"name": "Authentication_IOCL_VC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29508073",
+		"_collection_link": "https://speeding-resonance-716623.postman.co/workspace/API_AUTOMATION_2025~f1cf5e56-60ec-45af-9dfd-a09579f084fe/collection/29508073-83361042-866b-4197-bf1c-4bb545413b4f?action=share&source=collection_link&creator=29508073"
+	},
+	"item": [
+		{
+			"name": "UserAuthentication",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nhKsSuxywQJb/5d+K+lENPJCrNNrEeCvKTfUQbDl/jbu/C9efjUje/twcpozhApCGn5G56pITLh9/EBs+ispDYosLCl8aGcSEr25lPLjzR60CQ0iQ9w8aXEZBYs6g+iGm5/Rq9+KGIoCGfsF1EKIyZ8VlBwfgXFIo/0jVMFAz1BDStEdZXiC5IR8P9drEXdr00/0OH7q5xG4VorMh/2nwCZ6k21czUOaM76ZyiCg/Ymn9wZgZBCjs5ANbb7fMBM1/VkWCfW/jn4n1UDKfOeYTsH/xZtmf/KhajD2Gd7tk3hA4R2i7CFDN9akIgYeSqUaBHavUP65z/7txUQakynu5g==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "https://ioclvcsmart.tmsitrimble.in",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"applicationId\":1,\"userName\":\"PSO-1200\",\"password\":\"Password@1200\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Env_iocl_vc}}/VCSmart/login/post/json/userAuthentication",
+					"host": [
+						"{{Env_iocl_vc}}"
+					],
+					"path": [
+						"VCSmart",
+						"login",
+						"post",
+						"json",
+						"userAuthentication"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
